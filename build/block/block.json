@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "automattic/chatrix",
+  "version": "0.9.1",
+  "title": "Chatrix",
+  "category": "embed",
+  "icon": "format-chat",
+  "description": "Matrix client",
+  "attributes": {
+    "instanceId": {
+      "type": "string",
+      "default": ""
+    },
+    "defaultHomeserver": {
+      "type": "string",
+      "default": ""
+    },
+    "roomId": {
+      "type": "string",
+      "default": ""
+    },
+    "height": {
+      "type": "object",
+      "default": {
+        "value": 600,
+        "unit": "px"
+      }
+    },
+    "borderWidth": {
+      "type": "object",
+      "default": {
+        "value": 1,
+        "unit": "px"
+      }
+    },
+    "borderRadius": {
+      "type": "object",
+      "default": {
+        "value": 10,
+        "unit": "px"
+      }
+    },
+    "borderStyle": {
+      "type": "string",
+      "default": "solid"
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "black"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "chatrix",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewScript": "file:./view.js",
+  "style": "file:./style-index.css"
+}
